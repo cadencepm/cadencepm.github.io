@@ -1,0 +1,16 @@
+.vertical-menu {
+    width: 100px;
+  }
+  
+  .vertical-menu a {
+    background-color: #fffbf8; 
+    color: #231f20; 
+    display:block; 
+    padding: 8px;
+    text-decoration: none;
+  }
+  
+  .vertical-menu a.active {
+    background-color: #848f2c; 
+    color: #fffbf8;
+  }
