@@ -1,16 +1,22 @@
 .paragraph {color: #848f2c;}
-body {background-color: #fffbf8;}
-main {
+body 
+{
+  background-color: #fffbf8;
+}
+main 
+{
+    padding-top: 100px;
     border-style: solid;
     border-width: 25px 25px;
     border-color: #f6f4ed;
 }
 nav 
 {
-    position: absolute;
-    right: 0;
+    overflow: visible;
+    position:relative;
     width: 180px;
     height: 150px;
+    float: right;
   } 
 aside 
 {
@@ -27,4 +33,24 @@ aside
   #reflecp
   {
     text-indent: 50px;
+  }
+  a:link {
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  a:visited {
+    color: #848f2c;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  a:hover {
+    color: #707b23;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  a:active {
+    color: #707b23;
+    background-color: transparent;
+    text-decoration: underline;
   }
