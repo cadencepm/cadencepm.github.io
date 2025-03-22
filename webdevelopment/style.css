@@ -3,9 +3,11 @@ body
 {
   background-color: #fffbf8;
 }
+header{
+  padding-bottom: 100px;
+}
 main 
 {
-    padding-top: 100px;
     border-style: solid;
     border-width: 25px 25px;
     border-color: #f6f4ed;

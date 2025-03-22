@@ -17,6 +17,7 @@ Tested: 3/6/25 passed firefox and chrome
 <html lang="en-US">
 <head>
     <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Home</title>
     
     <link rel="stylesheet" 
@@ -25,8 +26,15 @@ Tested: 3/6/25 passed firefox and chrome
     href="nav.css">
     
 </head>
+<header>
     <nav>
-        <ul>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+
+        <!-- Label for hamburger icon -->
+        <label for="menu-toggle" class="hamburger">&#9776;</label>
+    
+        
+        <ul id="nav-links">
             <li class="vertical-menu">
                 <a href="https://cadencepm.github.io/webdevelopment/index.html" class="active">Home</a>
                 <a href="https://cadencepm.github.io/webdevelopment/about.html">About</a>
@@ -43,6 +51,7 @@ Tested: 3/6/25 passed firefox and chrome
             </li>
             </ul>
     </nav>
+</header>
 <main>
 <body>
     <h1 class="paragraph"> Home Page</h1>
