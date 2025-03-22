@@ -46,10 +46,7 @@
 .dropdown:hover .dropdown-content {display: block;}
 
 
-.hamburger 
-{
-  display: hide; /* Show the hamburger icon */
-}
+
 .menu-toggle 
 {
   display: none;
@@ -61,7 +58,6 @@
   #nav-links 
   {
       display: none; 
-    
   }
 
   #nav-links li 
@@ -76,12 +72,6 @@
       font-size: 30px;
       padding: 20px;
       text-align: right;
-  }
-
-  /*hide the checkbox input */
-  .menu-toggle 
-  {
-      display: none;
   }
 
   .menu-toggle:checked + .hamburger + #nav-links 
