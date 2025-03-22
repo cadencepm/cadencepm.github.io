@@ -3,9 +3,12 @@ body
 {
   background-color: #fffbf8;
 }
+header
+{
+  padding-bottom: 145px;
+}
 main
 {
-  padding-top:120px;
   padding-bottom:10px;
 }
 nav 
