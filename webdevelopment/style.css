@@ -7,11 +7,9 @@ header
 {
   padding-bottom: 110px;
 }
-main 
+main
 {
-    border-style: solid;
-    border-width: 25px 25px;
-    border-color: #f6f4ed;
+  padding-bottom:10px;
 }
 nav 
 {
@@ -62,3 +60,15 @@ aside
     background-color: transparent;
     text-decoration: underline;
   }
+  .footer 
+  {
+   display:hide;
+  }
+  
+  /* Specific styles for Footer 1 */
+  #footer1 
+  {
+    background-color: #f6f4ed;
+    font-size: 14px;
+  }
+  
