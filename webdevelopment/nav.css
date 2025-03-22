@@ -45,39 +45,47 @@
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {display: block;}
 
-.hamburger {
+
+.hamburger 
+{
   display: hide; /* Show the hamburger icon */
 }
-.menu-toggle {
+.menu-toggle 
+{
   display: none;
 }
 
-@media only screen and (max-width: 768px) {
-  /* Hide the navigation menu by default on mobile */
-  #nav-links {
-      display: none; /* Hidden by default */
+@media only screen and (max-width: 768px) 
+{
+  /*hide the navigation menu by default on mobile */
+  #nav-links 
+  {
+      display: none; 
     
   }
 
-  #nav-links li {
+  #nav-links li 
+  {
       margin: 0;
   }
 
-  /* Show the hamburger menu icon on mobile */
-  .hamburger {
-      display: block; /* Show the hamburger icon */
+  /* show the hamburger menu icon on mobile */
+  .hamburger 
+  {
+      display: block; 
       font-size: 30px;
       padding: 20px;
       text-align: right;
   }
 
-  /* Hide the checkbox input (still functional) */
-  .menu-toggle {
+  /*hide the checkbox input */
+  .menu-toggle 
+  {
       display: none;
   }
 
-  /* Toggle the visibility of the navigation menu when the checkbox is checked */
-  .menu-toggle:checked + .hamburger + #nav-links {
+  .menu-toggle:checked + .hamburger + #nav-links 
+  {
       display: flex; /* Show the menu when the checkbox is checked */
   }
 }
