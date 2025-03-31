@@ -2,11 +2,11 @@
 {
   color: #848f2c;
   width: 30%;
-  padding-left:15px;
-  margin-left: 15px;
+  padding-left:15%;
+  margin-left: 15%;
   float: right;
   font-style: inherit;
-  text-indent: 50px;
+  text-indent: 50%;
 }
 body 
 {
@@ -15,17 +15,15 @@ body
 header
 {
   background-color:#f6f4ed;
+  padding-bottom: 3%;
 }
-main
-{
-  padding-bottom:10px;
-}
+
 nav 
 {
     overflow: visible;
-    position:relative;
-    width: 180px;
-    height: 150px;
+    position:static;
+    width: 25%;
+    height: 5%;
     float: right;
   } 
   #para1::first-letter 
@@ -34,7 +32,7 @@ nav
   }
   #reflecp
   {
-    text-indent: 50px;
+    text-indent: 50%;
   }
   a:link 
   {
@@ -69,6 +67,6 @@ nav
   #footer1 
   {
     background-color: #f6f4ed;
-    font-size: 14px;
+    font-size: 70%;
   }
   
