@@ -14,8 +14,9 @@
   
   .vertical-menu a.active 
   {
-    background-color: #848f2c; 
-    color: #fffbf8;
+    background-color: #f6f4ed; 
+    color: #231f20;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   }
   nav ul { list-style-type: none; }
 
@@ -42,6 +43,8 @@
 }
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover {background-color: #ddd;}
+
+.vertical-menu a:hover {background-color: #ddd;}
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {display: block;}
 

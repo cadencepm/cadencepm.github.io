@@ -17,6 +17,7 @@ Tested:
 <html lang="en-US">
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Portfolio</title>
     <link rel="stylesheet" 
     href="style.css">
@@ -24,7 +25,9 @@ Tested:
     href="nav.css">
 </head>
 <nav>
-    <ul>
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    <label for="menu-toggle" class="hamburger">&#9776;</label>
+    <ul id="nav-links">
         <li class="vertical-menu">
             <a href="https://cadencepm.github.io/webdevelopment/index.html" class="active">Home</a>
             <a href="https://cadencepm.github.io/webdevelopment/about.html">About</a>
@@ -43,7 +46,7 @@ Tested:
 </nav>
 <main>
 <body>
-    <footer>
+    <footer id="footer1" class="footer">
         <p>Cadence Mitchell</p>
         <p>cpmpqd@umsystem.edu</p>
         <p>&copy; Copyright 2025, All Rights Reserved</p>

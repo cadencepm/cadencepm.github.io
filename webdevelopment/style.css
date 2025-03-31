@@ -1,11 +1,19 @@
-.paragraph {color: #848f2c;}
+.paragraph
+{
+  color: #848f2c;
+  width: 30%;
+  padding-left:15px;
+  margin-left: 15px;
+  float: right;
+  font-style: inherit;
+  text-indent: 50px;
+}
 body 
 {
   background-color: #fffbf8;
 }
 header
 {
-  padding-bottom: 145px;
   background-color:#f6f4ed;
 }
 main
@@ -20,15 +28,6 @@ nav
     height: 150px;
     float: right;
   } 
-aside 
-{
-    width: 30%;
-    padding-left:15px;
-    margin-left: 15px;
-    float: right;
-    font-style: inherit;
-    text-indent: 50px;
-  }
   #para1::first-letter 
   {
     color: #848f2c;
