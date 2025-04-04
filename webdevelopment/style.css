@@ -11,11 +11,11 @@
 body 
 {
   background-color: #fffbf8;
+  padding-bottom: 40%;
 }
 header
 {
   background-color:#f6f4ed;
-  padding-bottom: 3%;
 }
 
 nav 
@@ -32,7 +32,7 @@ nav
   }
   #reflecp
   {
-    text-indent: 50%;
+    text-indent: 5%;
   }
   a:link 
   {
@@ -71,13 +71,18 @@ nav
   /* Specific styles for Footer 1 */
   #footer1 
   {
-      background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('images/background.png'); /* Path to your image */
-      background-size: cover;  /* Ensures the image covers the entire footer */
-      background-position: center; /* Centers the image */
-      background-repeat: no-repeat; /* Prevents repeating */
+      background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('images/background.png');
+      background-size: cover;  
+      background-position: center; 
+      background-repeat: no-repeat; 
       font-size: 70%; /* Adds space inside the footer */
       font-weight: 550;
       padding: 0.5% 1%;
+  }
+
+  .footer-top-padding {
+    height: 8px;
+    background-color: #fffbf8;
   }
 
   #email {
@@ -92,3 +97,19 @@ nav
     vertical-align: middle;
   }
   
+ .zoom-image {
+  transition: transform 0.3s ease; 
+}
+
+.zoom-image:hover {
+  transform: scale(1.2); 
+}
+
+video {
+  width: 100%;               
+  max-width: 800px;         
+  border-radius: 8px;       
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); 
+  display: block;          
+  margin: 20px auto; 
+}
