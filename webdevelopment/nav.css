@@ -53,9 +53,16 @@
   display: none;
 }
 
-.hamburger 
+.hamburger
 {
-  display:flex; /* Always visible */
+  display: none;
+}
+
+@media screen and (max-width: 768px) 
+{
+  .hamburger 
+{
+  display: flex;
   font-size: 200%;
   padding-right: 80%;
   text-align: right;
@@ -76,4 +83,5 @@
 .menu-toggle:checked + .hamburger + #nav-links 
 {
   display: flex;
+}
 }

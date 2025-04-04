@@ -62,11 +62,33 @@ nav
   {
    display:hide;
   }
+
+  .footer p {
+    line-height: 0.5; /* Adjust the value to decrease spacing */
+  }
+  
   
   /* Specific styles for Footer 1 */
   #footer1 
   {
-    background-color: #f6f4ed;
-    font-size: 70%;
+      background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('images/background.png'); /* Path to your image */
+      background-size: cover;  /* Ensures the image covers the entire footer */
+      background-position: center; /* Centers the image */
+      background-repeat: no-repeat; /* Prevents repeating */
+      font-size: 70%; /* Adds space inside the footer */
+      font-weight: 550;
+      padding: 0.5% 1%;
+  }
+
+  #email {
+    width: 15px; /* Set the width */
+    height: auto;  /* Maintain aspect ratio */
+    vertical-align: middle;
+  }
+
+  #phone {
+    width: 10px; /* Set the width */
+    height: auto;  /* Maintain aspect ratio */
+    vertical-align: middle;
   }
   
