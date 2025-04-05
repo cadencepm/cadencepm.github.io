@@ -1,3 +1,4 @@
+/* === menu === */
 .vertical-menu 
   {
     width: 100px;
@@ -19,9 +20,11 @@
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   }
   nav ul { list-style-type: none; }
+  .vertical-menu a:hover {background-color: #ddd;}
+/* ====== */
 
 
-/* Dropdown Content (Hidden by Default) */
+/* === dropdown === */
 .dropdown-content 
 {
   display: none;
@@ -39,15 +42,12 @@
   text-decoration: none;
   display: block;
 }
-/* Change color of dropdown links on hover */
 .dropdown-content a:hover {background-color: #ddd;}
-
-.vertical-menu a:hover {background-color: #ddd;}
-/* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {display: block;}
+/* ====== */
 
 
-
+/* === hamburger === */
 .menu-toggle 
 {
   display: none;
@@ -69,7 +69,8 @@
   cursor: pointer;
 }
 
-#nav-links li{
+#nav-links li
+{
   margin: 0;
 }
 
@@ -85,3 +86,4 @@
   display: flex;
 }
 }
+/* ====== */

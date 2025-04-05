@@ -12,6 +12,8 @@ body
 {
   background-color: #fffbf8;
   padding-bottom: 40%;
+  font-family: Arial, sans-serif;
+  color: #333;
 }
 header
 {
@@ -62,8 +64,8 @@ nav
   {
    display:hide;
   }
-
-  .footer p {
+  .footer p 
+  {
     line-height: 0.5; /* Adjust the value to decrease spacing */
   }
   
@@ -80,36 +82,107 @@ nav
       padding: 0.5% 1%;
   }
 
-  .footer-top-padding {
+  .footer-top-padding 
+  {
     height: 8px;
     background-color: #fffbf8;
   }
 
-  #email {
+  #email 
+  {
     width: 15px; /* Set the width */
     height: auto;  /* Maintain aspect ratio */
     vertical-align: middle;
   }
 
-  #phone {
+  #phone 
+  {
     width: 10px; /* Set the width */
     height: auto;  /* Maintain aspect ratio */
     vertical-align: middle;
   }
   
- .zoom-image {
+ .zoom-image 
+ {
   transition: transform 0.3s ease; 
 }
 
-.zoom-image:hover {
+.zoom-image:hover 
+{
   transform: scale(1.2); 
 }
 
-video {
+video 
+{
   width: 100%;               
-  max-width: 800px;         
+  max-width: 400px;         
   border-radius: 8px;       
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); 
   display: block;          
   margin: 20px auto; 
 }
+
+/* Print styles */
+@media print 
+{
+  @page 
+  {
+    margin: 1in;
+  }
+
+  body 
+  {
+    color: black;
+    font-family: serif;
+  }
+
+  h1 
+  {
+    font-family: 'Montserrat', serif; 
+    font-size: 20pt;
+  }
+
+  p, ul, ol, blockquote, footer 
+  {
+    font-family: serif;
+    color: black;
+    font-size: 12pt;
+  }
+
+  blockquote 
+  {
+    font-style: italic;
+  }
+
+  footer img,
+  footer svg,
+  footer .icon 
+  {
+    display: none; 
+  }
+
+  body 
+  {
+    line-height: 1.3;
+    padding: 0;
+    margin: 0;
+  }
+  video 
+  {
+    max-width: 50%;
+    height: auto;
+  }
+
+  .no-break 
+  {
+    page-break-inside: avoid;
+  }
+
+  html, body 
+  {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+}
+
