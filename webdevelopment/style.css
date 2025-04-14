@@ -1,188 +1,244 @@
-.paragraph
-{
-  color: #848f2c;
-  width: 30%;
-  padding-left:15%;
-  margin-left: 15%;
-  float: right;
-  font-style: inherit;
-  text-indent: 50%;
-}
-body 
-{
+body {
+  margin: 0;
+  font-family: 'Georgia', serif;
+  text-align: center;
   background-color: #fffbf8;
-  padding-bottom: 40%;
-  font-family: Arial, sans-serif;
   color: #333;
 }
-header
-{
-  background-color:#f6f4ed;
+
+header {
+  background-color: #f6f4ed;
 }
 
-nav 
-{
-    overflow: visible;
-    position:static;
-    width: 25%;
-    height: 5%;
-    float: right;
-  } 
-  #para1::first-letter 
-  {
-    color: #848f2c;
-  }
-  #reflecp
-  {
-    text-indent: 5%;
-  }
-  a:link 
-  {
-    color: green;
-    background-color: transparent;
-    text-decoration: none;
-  }
-  a:visited 
-  {
-    color: #848f2c;
-    background-color: transparent;
-    text-decoration: none;
-  }
-  a:hover 
-  {
-    color: #707b23;
-    background-color: transparent;
-    text-decoration: underline;
-  }
-  a:active 
-  {
-    color: #707b23;
-    background-color: transparent;
-    text-decoration: underline;
-  }
-  .footer 
-  {
-   display:hide;
-  }
-  .footer p 
-  {
-    line-height: 0.5; /* Adjust the value to decrease spacing */
-  }
-  
-  
-  /* Specific styles for Footer 1 */
-  #footer1 
-  {
-      background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('images/background.png');
-      background-size: cover;  
-      background-position: center; 
-      background-repeat: no-repeat; 
-      font-size: 70%; /* Adds space inside the footer */
-      font-weight: 550;
-      padding: 0.5% 1%;
-  }
-
-  .footer-top-padding 
-  {
-    height: 8px;
-    background-color: #fffbf8;
-  }
-
-  #email 
-  {
-    width: 15px; /* Set the width */
-    height: auto;  /* Maintain aspect ratio */
-    vertical-align: middle;
-  }
-
-  #phone 
-  {
-    width: 10px; /* Set the width */
-    height: auto;  /* Maintain aspect ratio */
-    vertical-align: middle;
-  }
-  
- .zoom-image 
- {
-  transition: transform 0.3s ease; 
+nav {
+  overflow: visible;
+  position: static;
+  width: 25%;
+  height: 5%;
+  float: right;
 }
 
-.zoom-image:hover 
-{
-  transform: scale(1.2); 
+#para1::first-letter {
+  color: #848f2c;
 }
 
-video 
-{
-  width: 100%;               
-  max-width: 400px;         
-  border-radius: 8px;       
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); 
-  display: block;          
-  margin: 20px auto; 
+#reflecp {
+  text-indent: 5%;
 }
 
-/* Print styles */
-@media print 
-{
-  @page 
-  {
+a:link {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #848f2c;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #707b23;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: #707b23;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+.footer p {
+  line-height: 0.5;
+}
+
+#footer1 {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('images/background.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-size: 70%;
+  font-weight: 550;
+  padding: 0.5% 1%;
+}
+
+.footer-top-padding {
+  height: 8px;
+  background-color: #fffbf8;
+}
+
+#email {
+  width: 15px;
+  height: auto;
+  vertical-align: middle;
+}
+
+#phone {
+  width: 10px;
+  height: auto;
+  vertical-align: middle;
+}
+
+.zoom-image {
+  transition: transform 0.3s ease;
+}
+
+.zoom-image:hover {
+  transform: scale(1.2);
+}
+
+video {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  display: block;
+  margin: 20px auto;
+}
+
+@media print {
+  @page {
     margin: 1in;
   }
 
-  body 
-  {
+  body {
     color: black;
     font-family: serif;
+    line-height: 1.3;
+    padding: 0;
+    margin: 0;
   }
 
-  h1 
-  {
-    font-family: 'Montserrat', serif; 
+  h1 {
+    font-family: 'Montserrat', serif;
     font-size: 20pt;
   }
 
-  p, ul, ol, blockquote, footer 
-  {
+  p, ul, ol, blockquote, footer {
     font-family: serif;
     color: black;
     font-size: 12pt;
   }
 
-  blockquote 
-  {
+  blockquote {
     font-style: italic;
   }
 
   footer img,
   footer svg,
-  footer .icon 
-  {
-    display: none; 
+  footer .icon {
+    display: none;
   }
 
-  body 
-  {
-    line-height: 1.3;
-    padding: 0;
-    margin: 0;
-  }
-  video 
-  {
+  video {
     max-width: 50%;
     height: auto;
   }
 
-  .no-break 
-  {
+  .no-break {
     page-break-inside: avoid;
   }
 
-  html, body 
-  {
+  html, body {
     width: 100%;
     height: 100%;
     overflow: hidden;
   }
 }
 
+.paragraph-container {
+  display: flex;
+  padding: 20px;
+}
+
+.paragraph-container p {
+  flex: 1;
+  margin: 0 10px;
+  padding: 10px;
+  background-color: #fffbf8;
+  border: 1px solid #ccc;
+}
+
+.navbar {
+  padding: 1rem;
+  background-color: #fff;
+}
+
+.main-btn {
+  font-size: 1.2rem;
+  font-weight: bold;
+  background-color: #889144;
+  color: #fffbf8;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+
+.header {
+  padding: 2rem 1rem;
+}
+
+.company-name {
+  font-family: 'Brush Script MT', cursive;
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.welcome-statement {
+  font-weight: bold;
+  margin: 1rem 0;
+}
+
+.welcome-paragraph {
+  max-width: 800px;
+  margin: 0 auto;
+  color: #333;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.card-link {
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.2s;
+}
+
+.card-link:hover {
+  transform: scale(1.03);
+}
+
+.card {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 200px;
+  text-align: center;
+}
+
+.card-img {
+  width: 200px;
+  height: 300px;
+  position: center;
+}
+.card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.port-img {
+height: 300px;
+width:auto;
+}
