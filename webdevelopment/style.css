@@ -306,3 +306,82 @@ input:focus, textarea:focus {
       padding: 1rem;
   }
 }
+
+.table-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+figcaption {
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.responsive-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 2px solid #333;
+}
+
+.responsive-table th,
+.responsive-table td {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+.responsive-table thead tr,
+.responsive-table tfoot tr {
+  background-color: #d3e4f0; /* Same color for first and last row */
+}
+
+.responsive-table thead tr,
+.responsive-table tfoot tr {
+  background-color: rgba(132, 143, 44, 0.8);
+}
+
+.responsive-table tbody tr:nth-child(even) {
+  background-color: #f6f4ed;
+}
+
+.responsive-table tbody tr:nth-child(odd) {
+  background-color: #fffbf8;
+}
+
+/* Responsive styling */
+@media (max-width: 600px) {
+  .responsive-table th,
+  .responsive-table td {
+      display: block;
+      width: 100%;
+  }
+
+  .responsive-table thead,
+  .responsive-table tfoot {
+      display: none;
+  }
+
+  .responsive-table tr {
+      margin-bottom: 1rem;
+      border-bottom: 2px solid #ccc;
+  }
+
+  .responsive-table td {
+      text-align: right;
+      padding-left: 50%;
+      position: relative;
+  }
+
+  .responsive-table td::before {
+      content: attr(data-label);
+      position: absolute;
+      left: 0;
+      width: 45%;
+      padding-left: 10px;
+      font-weight: bold;
+      text-align: left;
+  }
+}
