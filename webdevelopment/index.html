@@ -16,99 +16,67 @@ Tested: 3/6/25 passed firefox and chrome
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Home</title>
-    
-    <link rel="stylesheet" 
-    href="style.css">
-    <link rel="stylesheet" 
-    href="nav.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Home</title>
 
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon" sizes="48x48">
-    
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="nav.css" />
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon" sizes="48x48" />
 </head>
-<main>
-<body>  
-    <nav class="navbar">
-    <button class="main-btn">Main</button>
+<body class="home-page">
+
+  <nav class="navbar">
+    <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+    <label for="menu-toggle" class="hamburger">&#9776;</label>
+    <ul id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li class="dropdown">
+        <a href="project.html" class="dropbtn">Portfolio</a>
+        <div class="dropdown-content">
+            <a href="project.html#causal">Casual</a>
+            <a href="project.html#seniors">Seniors</a>
+            <a href="project.html#couples">Couples</a>
+        </div>
+      </li>
+      <li><a href="reflection.html">Reflection</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
   </nav>
-  <main class="card-container">
+  
   <header class="header">
     <h1 class="company-name">Found My Battery</h1>
-    <h2 class="welcome-statement">Welcome, my name is Cadence Mitchell. I am the CEO and founder of my photographys business.</h2>
-    <p class="welcome-paragraph">This portfolio will serve as a platform to showcase my photography works. The examples provided may also show an idea of my style and creative vision. The primary purpose of this media set is to establish a solid online presence for collaboration and clientele. The curation of my work is to deliver an easily accessible format of my images ranging from landscape pieces to portraits and event related bookings. I would appreciate the building of my credibility as a seasoned photographer. This website is an extension of branding and generation of business opportunities. Whether that be colleagues or potential clients. The main goal of this media format would be clear navigation, a visually engaging layout, and versatility within the portfolio. My objectives are to reach a professional and commercial audience to push my services out. Ultimately, the portfolio website functions as both an artistic showcase and a professional tool for the growth of a career.</p>
+    <h2 class="welcome-statement">Welcome, my name is Cadence Mitchell. I am the CEO and founder of my photography business.</h2>
+    <p class="welcome-paragraph">
+      This portfolio will serve as a platform to showcase my photography works. The examples provided may also show an idea of my style and creative vision. The primary purpose of this media set is to establish a solid online presence for collaboration and clientele. The curation of my work is to deliver an easily accessible format of my images ranging from landscape pieces to portraits and event related bookings. I would appreciate the building of my credibility as a seasoned photographer. This website is an extension of branding and generation of business opportunities. Whether that be colleagues or potential clients. The main goal of this media format would be clear navigation, a visually engaging layout, and versatility within the portfolio. My objectives are to reach a professional and commercial audience to push my services out. Ultimately, the portfolio website functions as both an artistic showcase and a professional tool for the growth of a career.
+    </p>
   </header>
 
-  <a href="https://cadencepm.github.io/webdevelopment/about.html" target="_blank" class="card-link">
-    <div class="card">
-      <img src="images/aboutbutton.png" alt="About Image" class="card-img" />
-    </div>
+  <main class="card-container">
+    <a href="about.html" class="card">
+      <img src="images/aboutbutton.png" alt="About Image" />
+      <span>About</span>
     </a>
-  
-    <a href="https://cadencepm.github.io/webdevelopment/project.html" target="_blank" class="card-link">
-        <div class="card">
-          <img src="images/portfoliobutton.png" alt="Portfolio Image" class="card-img" />
-        </div>
-      </a>
-  
-      <a href="https://cadencepm.github.io/webdevelopment/reflection.html" target="_blank" class="card-link">
-      <div class="card">
-        <img src="images/reflectionbutton.png" alt="Reflection Image" class="card-img" />
-      </div>
+    <a href="project.html" class="card">
+      <img src="images/portfoliobutton.png" alt="Portfolio Image" />
+      <span>Portfolio</span>
     </a>
-  
-    <a href="#" target="_blank" class="card-link">
-      <div class="card">
-        <img src="images/contactsbutton.png" alt="Contacts Image" class="card-img" />
-      </div>
+    <a href="reflection.html" class="card">
+      <img src="images/reflectionbutton.png" alt="Reflection Image" />
+      <span>Reflection</span>
     </a>
-    
-    <figure class="table-container">
-      <figcaption>Course Progress</figcaption>
-      <table class="responsive-table" aria-label="Student Course Progress Table">
-          <thead>
-              <tr>
-                  <th scope="col">Page</th>
-                  <th scope="col">Progress</th>
-              </tr>
-          </thead>
-          <tbody>
-              <tr>
-                  <td>Home</td>
-                  <td>95%</td>
-              </tr>
-              <tr>
-                  <td>Contact</td>
-                  <td>70%</td>
-              </tr>
-              <tr>
-                  <td>Portfolio</td>
-                  <td>40%</td>
-              </tr>
-              <tr>
-                  <td>About</td>
-                  <td>80%</td>
-              </tr>
-              <tr>
-                  <td>Reflection</td>
-                  <td>20%</td>
-              </tr>
-          </tbody>
-          <tfoot>
-              <tr>
-                  <td colspan="3">Data as of April 2025</td>
-              </tr>
-          </tfoot>
-      </table>
-  </figure>
-  
-<footer id="footer1" class="footer">
+    <a href="contact.html" class="card">
+      <img src="images/contactsbutton.png" alt="Contacts Image" />
+      <span>Contacts</span>
+    </a>
+  </main>
+
+  <footer class="footer">
     <p>Cadence Mitchell</p>
-    <p><img src="images/email.png" alt="Photo from the gallery" id="email" class="zoom-image">  cpmpqd@umsystem.edu</p>
-    <p> <img src="images/phone.png" alt="Photo from the gallery" id="phone" class="zoom-image"> 1+888-888-8888. </p>
-    <p>&copy; Copyright 2025, All Rights Reserved</p>
-</footer>
+    <p><img src="images/email.png" alt="email icon" /> cpmpqd@umsystem.edu</p>
+    <p><img src="images/phone.png" alt="phone icon" /> +1-888-888-8888</p>
+    <p>&copy; 2025 All Rights Reserved</p>
+  </footer>
 </body>
-</main>
 </html>

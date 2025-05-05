@@ -30,30 +30,28 @@ Tested: 2/11/25 passed firefox and chrome
     
 </head>
 <header>
-<nav>
-    <input type="checkbox" id="menu-toggle" class="menu-toggle">
-    <label for="menu-toggle" class="hamburger">&#9776;</label>
-    <ul id="nav-links">
-        <li class="vertical-menu">
-            <a href="https://cadencepm.github.io/webdevelopment/index.html" class="active">Home</a>
-            <a href="https://cadencepm.github.io/webdevelopment/about.html">About</a>
-            <div class="dropdown">
-                <a class="droptn"href="https://cadencepm.github.io/webdevelopment/project.html">Projects</a>
-                <div class="dropdown-content">
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
-                </div>
+    <nav class="navbar">
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+        <label for="menu-toggle" class="hamburger">&#9776;</label>
+        <ul id="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li class="dropdown">
+            <a href="project.html" class="dropbtn">Portfolio</a>
+            <div class="dropdown-content">
+                <a href="project.html#causal">Casual</a>
+                <a href="project.html#seniors">Seniors</a>
+                <a href="project.html#couples">Couples</a>
             </div>
-            <a href="https://cadencepm.github.io/webdevelopment/reflection.html">Reflection</a>
-            <a href="https://cadencepm.github.io/webdevelopment/contact.html">Contact</a>
-        </li>
+          </li>
+          <li><a href="reflection.html">Reflection</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
-</nav>
+      </nav>
 <h1>Contact</h1>
 </header>
 <main>
-<body>
+<body class="contact-page">
     <section class="contact-form-container">
         <form class="contact-form" id="contactForm"
             action="mailto:cpmpqd@umsystem.edu?subject=Portfolio/Professional Website Contact"
@@ -72,47 +70,6 @@ Tested: 2/11/25 passed firefox and chrome
             <textarea id="message" name="Message" placeholder="Your message..." rows="5" required></textarea>
 
             <button type="submit">Send</button>
-        </form>
-    </section>
-
-    <figure class="table-container">
-        <figcaption>Course Progress</figcaption>
-        <table class="responsive-table" aria-label="Student Course Progress Table">
-            <thead>
-                <tr>
-                    <th scope="col">Page</th>
-                    <th scope="col">Progress</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Home</td>
-                    <td>95%</td>
-                </tr>
-                <tr>
-                    <td>Contact</td>
-                    <td>70%</td>
-                </tr>
-                <tr>
-                    <td>Portfolio</td>
-                    <td>40%</td>
-                </tr>
-                <tr>
-                    <td>About</td>
-                    <td>80%</td>
-                </tr>
-                <tr>
-                    <td>Reflection</td>
-                    <td>20%</td>
-                </tr>
-            </tbody>
-            <tfoot>
-                <tr>
-                    <td colspan="3">Data as of April 2025</td>
-                </tr>
-            </tfoot>
-        </table>
-    </figure>
     
 </main>
 

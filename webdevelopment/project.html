@@ -22,77 +22,51 @@ Tested:
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 </head>
 <header>
-<nav>
-    <input type="checkbox" id="menu-toggle" class="menu-toggle">
-    <label for="menu-toggle" class="hamburger">&#9776;</label>
-    <ul id="nav-links">
-        <li class="vertical-menu">
-            <a href="https://cadencepm.github.io/webdevelopment/index.html" class="active">Home</a>
-            <a href="https://cadencepm.github.io/webdevelopment/about.html">About</a>
-            <div class="dropdown">
-                <a class="droptn"href="https://cadencepm.github.io/webdevelopment/project.html">Projects</a>
-                <div class="dropdown-content">
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
-                </div>
+    <nav class="navbar">
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+        <label for="menu-toggle" class="hamburger">&#9776;</label>
+        <ul id="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li class="dropdown">
+            <a href="project.html" class="dropbtn">Portfolio</a>
+            <div class="dropdown-content">
+                <a href="project.html#causal">Casual</a>
+                <a href="project.html#seniors">Seniors</a>
+                <a href="project.html#couples">Couples</a>
             </div>
-            <a href="https://cadencepm.github.io/webdevelopment/reflection.html">Reflection</a>
-            <a href="https://cadencepm.github.io/webdevelopment/contact.html">Contact</a>
-        </li>
+          </li>
+          <li><a href="reflection.html">Reflection</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
-</nav>
+      </nav>
 <h1>Portfolio</h1>
 </header>
 <body>
-    <img src="images/casual.png" alt="Casual" class="port-img">
-   <p><b>Casual</b></p>
+    <section id="casual" class="portfolio-section">
+    <img src="images/casual.png" alt="Casual" class="p-img">
+    <div id="reflecp">
+   <h3><b>Casual</b></h3>
    <p> This project was my first session as a business. One of my friends decided that they wanted some portraits, and I was beginning my journey of switching my hobby into a professional endeavor. I took my friend to a few areas downtown and used my Canon Rebel T6. I had dabbled in Adobe Lightroom before. However, the extent of choosing each photo carefully and editing each to match one another proved a challenge. Since the photos were taken around sundown the lighting began changing throughout the session. This factor made it difficult to hold cohesiveness in the album. As this was my first session with a client another challenge was figuring out an accessible sharing platform to deliver the images on.  </p>
-   <img src="images/seniors.png" alt="Seniors" class="port-img">
-   <p><b>Seniors</b></p>
+    </div>
+    <section>
+
+    <section id="seniors" class="portfolio-section">
+   <img src="images/seniors.png" alt="Seniors" class="p-img">
+   <div id="reflecp">
+   <h3><b>Seniors</b></h3>
    <p>This project was my first ever senior session. I enlisted one of my friends as my first ‘Senior Sunday’ client. This project consisted of me taking professional pictures that were to showcase the personality of my client. This session was shot during the daytime in downtown and at a park. I again used my Canon Rebel T6. The difficulties with this execution were learning to edit in the style who suited my current client. With this project I learned to use Adobe Photoshop to edit out shadows, pieces of hair, railings, etc. Finding creative and new places to shoot were also difficult. As I gained more clients, I learned to provide posing prompts and facial expressions.  </p>
-   <img src="images/couples.png" alt="Couples" class="port-img">
-   <p><b>Couples</b></p>
+    </div>
+    </section>
+
+    <section id="couples" class="portfolio-section">
+   <img src="images/couples.png" alt="Couples" class="p-img">
+   <div id="reflecp">
+   <h3><b>Couples</b></h3>
    <p>This final project was for a couple. Before this shoot, I had only done solo portraits, so this was another learning curve. My camera of choice was again a Canon Rebel T6. I shot this session on my great aunt’s property during sunset. This session by far went the smoothest. I learned the correct settings to be able to easily adjust to the rapid lighting change. I also was improving my Lightroom skills little by little. My projects became more and more cohesive. The only challenges with this session were finding posing prompts that included two people. Trying to incorporate another person without the images coming out awkward. </p>
+  </div>
+    </section>
   
-   <figure class="table-container">
-    <figcaption>Course Progress</figcaption>
-    <table class="responsive-table" aria-label="Student Course Progress Table">
-        <thead>
-            <tr>
-                <th scope="col">Page</th>
-                <th scope="col">Progress</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Home</td>
-                <td>95%</td>
-            </tr>
-            <tr>
-                <td>Contact</td>
-                <td>70%</td>
-            </tr>
-            <tr>
-                <td>Portfolio</td>
-                <td>40%</td>
-            </tr>
-            <tr>
-                <td>About</td>
-                <td>80%</td>
-            </tr>
-            <tr>
-                <td>Reflection</td>
-                <td>20%</td>
-            </tr>
-        </tbody>
-        <tfoot>
-            <tr>
-                <td colspan="3">Data as of April 2025</td>
-            </tr>
-        </tfoot>
-    </table>
-</figure>
 
 </figure>
    <footer id="footer1" class="footer">

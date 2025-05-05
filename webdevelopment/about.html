@@ -30,77 +30,63 @@ Tested: 3/6/25 passed firefox and chrome
     
 </head>
 <header>
-<nav>
-    <input type="checkbox" id="menu-toggle" class="menu-toggle">
-    <label for="menu-toggle" class="hamburger">&#9776;</label>
-    <ul id="nav-links">
-        <li class="vertical-menu">
-            <a href="https://cadencepm.github.io/webdevelopment/index.html" class="active">Home</a>
-            <a href="https://cadencepm.github.io/webdevelopment/about.html">About</a>
-            <div class="dropdown">
-                <a class="droptn"href="https://cadencepm.github.io/webdevelopment/project.html">Projects</a>
-                <div class="dropdown-content">
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
-                </div>
+    <nav class="navbar">
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+        <label for="menu-toggle" class="hamburger">&#9776;</label>
+        <ul id="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li class="dropdown">
+            <a href="project.html" class="dropbtn">Portfolio</a>
+            <div class="dropdown-content">
+                <a href="project.html#causal">Casual</a>
+                <a href="project.html#seniors">Seniors</a>
+                <a href="project.html#couples">Couples</a>
             </div>
-            <a href="https://cadencepm.github.io/webdevelopment/reflection.html">Reflection</a>
-            <a href="https://cadencepm.github.io/webdevelopment/contact.html">Contact</a>
-        </li>
+          </li>
+          <li><a href="reflection.html">Reflection</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
-</nav>
+      </nav>
 <h1>Cadence Mitchell</h1>
 </header>
 <main>
-<body>
-    <img src="images/headshot.png" alt="Headshot" class="port-img">
+<body class="about-page">
+    <div class="media-container">
+        <img src="images/headshot.png" alt="Headshot" class="port-img">
+        <video controls class="about-video">
+          <source src="video/about.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+<div id="aboutp">
 <p>I am majoring in electrical engineering as an undergraduate student. Currently I am a freshman at the University of Missouri, Columbia. My estimated graduation date is March of ’28. I am also a member of the Mizzou Engineering Student Council as of September 2024. As for my photography experience, I have been taking and editing photos for a total of eleven years. However, my business began in December of 2023. I have extensive experience with Adobe Photoshop and Lightroom. I am also an avid user of the Instagram platform. This media type is utilized to share my photography. My skills within those parameters are marketing and networking. </p>
-<h4>Education Overview</h4>
-<ul>
-    <li>Highschool Diploma</li>
-    <li>Freshman at University of Missouri</li>
-    <li>HTML</li>
-    <li>Electrical Engineering</li>
-  </ul>
-<blockquote>“There is no doubt that creativity is the most important human resource pf all. Without creativity, there would be no progress, and we would be forever repeating the same patterns."    ~ Edward de Bono</blockquote>
-<a href="CMresume.pdf" target="_blank">Resume</a>
-<video controls>
-    <source src="video/about.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
+</div>
+<blockquote>“There is no doubt that creativity is the most important human resource pf all. Without creativity, there would be no progress, and we would be forever repeating the same patterns."   <b> ~ Edward de Bono</b></blockquote>
+<a href="CMresume.pdf" target="_blank" class="resume-btn">Resume</a>
 </body>
 <div class="footer-top-padding"></div>
 
 <figure class="table-container">
-    <figcaption>Course Progress</figcaption>
+    <figcaption>Education Overview</figcaption>
     <table class="responsive-table" aria-label="Student Course Progress Table">
         <thead>
             <tr>
-                <th scope="col">Page</th>
-                <th scope="col">Progress</th>
+                <th scope="col">Education</th>
+                <th scope="col">Languages</th>
+                <th scope="col">Accomplishments</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>Home</td>
-                <td>95%</td>
+                <td>Highschool Diploma</td>
+                <td>HTML</td>
+                <td>MESC</td>
             </tr>
             <tr>
-                <td>Contact</td>
-                <td>70%</td>
-            </tr>
-            <tr>
-                <td>Portfolio</td>
-                <td>40%</td>
-            </tr>
-            <tr>
-                <td>About</td>
-                <td>80%</td>
-            </tr>
-            <tr>
-                <td>Reflection</td>
-                <td>20%</td>
+                <td>University of Missouri</td>
+                <td>C coding</td>
+                <td>Undergrad Research</td>
             </tr>
         </tbody>
         <tfoot>
