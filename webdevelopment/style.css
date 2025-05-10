@@ -93,7 +93,7 @@ header {
 
 .resume-btn {
   display: inline-block;
-  background-color: #889144;
+  background-color: #d4d0c1;
   color: #fffbf8;
   padding: 0.8rem 1.5rem;
   font-size: 1.1rem;
@@ -107,7 +107,7 @@ header {
 }
 
 .resume-btn:hover {
-  background-color: #707b23;
+  background-color: #333;
   transform: scale(1.05);
 }
 
@@ -541,7 +541,7 @@ figcaption {
 
 .responsive-table thead tr,
 .responsive-table tfoot tr {
-  background-color: rgba(132, 143, 44, 0.8);
+  background-color: #d4d0c1;
 }
 
 .responsive-table tbody tr:nth-child(even) {
@@ -617,3 +617,27 @@ footer.footer {
   text-align: center;
 }
 
+#para {
+  font-size: 20px;
+}
+
+#backToTop {
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 99;
+  font-size: 1.5rem;
+  background-color: #333;
+  color: #fffbf8;
+  border: none;
+  border-radius: 50%;
+  padding: 0.5rem 0.8rem;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  transition: background-color 0.3s ease;
+}
+
+#backToTop:hover {
+  background-color: #d4d0c1;
+}

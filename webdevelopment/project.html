@@ -46,35 +46,51 @@ Tested:
     <section id="casual" class="portfolio-section">
     <img src="images/casual.png" alt="Casual" class="p-img">
     <div id="reflecp">
-   <h3><b>Casual</b></h3>
-   <p> This project was my first session as a business. One of my friends decided that they wanted some portraits, and I was beginning my journey of switching my hobby into a professional endeavor. I took my friend to a few areas downtown and used my Canon Rebel T6. I had dabbled in Adobe Lightroom before. However, the extent of choosing each photo carefully and editing each to match one another proved a challenge. Since the photos were taken around sundown the lighting began changing throughout the session. This factor made it difficult to hold cohesiveness in the album. As this was my first session with a client another challenge was figuring out an accessible sharing platform to deliver the images on.  </p>
+   <h2><b>Casual</b></h2>
+   <p id="para"> This project was my first session as a business. One of my friends decided that they wanted some portraits, and I was beginning my journey of switching my hobby into a professional endeavor. I took my friend to a few areas downtown and used my Canon Rebel T6. I had dabbled in Adobe Lightroom before. However, the extent of choosing each photo carefully and editing each to match one another proved a challenge. Since the photos were taken around sundown the lighting began changing throughout the session. This factor made it difficult to hold cohesiveness in the album. As this was my first session with a client another challenge was figuring out an accessible sharing platform to deliver the images on.  </p>
     </div>
     <section>
 
     <section id="seniors" class="portfolio-section">
    <img src="images/seniors.png" alt="Seniors" class="p-img">
    <div id="reflecp">
-   <h3><b>Seniors</b></h3>
-   <p>This project was my first ever senior session. I enlisted one of my friends as my first ‘Senior Sunday’ client. This project consisted of me taking professional pictures that were to showcase the personality of my client. This session was shot during the daytime in downtown and at a park. I again used my Canon Rebel T6. The difficulties with this execution were learning to edit in the style who suited my current client. With this project I learned to use Adobe Photoshop to edit out shadows, pieces of hair, railings, etc. Finding creative and new places to shoot were also difficult. As I gained more clients, I learned to provide posing prompts and facial expressions.  </p>
+   <h2><b>Seniors</b></h2>
+   <p id="para">This project was my first ever senior session. I enlisted one of my friends as my first ‘Senior Sunday’ client. This project consisted of me taking professional pictures that were to showcase the personality of my client. This session was shot during the daytime in downtown and at a park. I again used my Canon Rebel T6. The difficulties with this execution were learning to edit in the style who suited my current client. With this project I learned to use Adobe Photoshop to edit out shadows, pieces of hair, railings, etc. Finding creative and new places to shoot were also difficult. As I gained more clients, I learned to provide posing prompts and facial expressions.  </p>
     </div>
     </section>
 
     <section id="couples" class="portfolio-section">
    <img src="images/couples.png" alt="Couples" class="p-img">
    <div id="reflecp">
-   <h3><b>Couples</b></h3>
-   <p>This final project was for a couple. Before this shoot, I had only done solo portraits, so this was another learning curve. My camera of choice was again a Canon Rebel T6. I shot this session on my great aunt’s property during sunset. This session by far went the smoothest. I learned the correct settings to be able to easily adjust to the rapid lighting change. I also was improving my Lightroom skills little by little. My projects became more and more cohesive. The only challenges with this session were finding posing prompts that included two people. Trying to incorporate another person without the images coming out awkward. </p>
+   <h2><b>Couples</b></h2>
+   <p id="para">This final project was for a couple. Before this shoot, I had only done solo portraits, so this was another learning curve. My camera of choice was again a Canon Rebel T6. I shot this session on my great aunt’s property during sunset. This session by far went the smoothest. I learned the correct settings to be able to easily adjust to the rapid lighting change. I also was improving my Lightroom skills little by little. My projects became more and more cohesive. The only challenges with this session were finding posing prompts that included two people. Trying to incorporate another person without the images coming out awkward. </p>
   </div>
     </section>
   
+    <button id="backToTop" title="Back to top">↑</button>
 
-</figure>
+  </figure>
    <footer id="footer1" class="footer">
       <p>Cadence Mitchell</p>
       <p><img src="images/email.png" alt="Email Icon" id="email" class="zoom-image"> cpmpqd@umsystem.edu</p>
       <p><img src="images/phone.png" alt="Phone Icon" id="phone" class="zoom-image"> 1+888-888-8888</p>
       <p>&copy; Copyright 2025, All Rights Reserved</p>
   </footer>
-</main>
-</body>
+  
+  <script>
+    const backToTopBtn = document.getElementById("backToTop");
+  
+    window.onscroll = function () {
+      if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+        backToTopBtn.style.display = "block";
+      } else {
+        backToTopBtn.style.display = "none";
+      }
+    };
+  
+    backToTopBtn.onclick = function () {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+  </script></body>
+
 </html>
